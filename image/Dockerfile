@@ -14,6 +14,6 @@ COPY server.tar .
 
 RUN tar -xvf server.tar && rm server.tar
 
-VOLUME /home/skaterxl
+VOLUME /maps
 WORKDIR /home/skaterxl/server
 CMD wineconsole XLMultiplayerServerConsoleApp.exe

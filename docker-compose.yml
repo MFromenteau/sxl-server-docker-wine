@@ -3,7 +3,7 @@ services:
   server:
     build: ./image
     volumes:
-      - /e/Servers/skaterxl:/root/skaterxl
+      - /home/skaterxl/server:/maps
     ports:
       - "7777:7777"
       - "7778:7778"

@@ -17,4 +17,5 @@ RUN tar -xvf server.tar && rm server.tar
 VOLUME /maps
 WORKDIR /home/skaterxl/server
 COPY ServerConfig.json .
+COPY Plugins .
 CMD wineconsole XLMultiplayerServerConsoleApp.exe

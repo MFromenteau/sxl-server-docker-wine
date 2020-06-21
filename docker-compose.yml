@@ -5,7 +5,9 @@ services:
     volumes:
       - /home/skaterxl/server:/maps
     ports:
-      - "7777:7777"
-      - "7778:7778"
+      - 7777:7777/tcp
+      - 7778:7778/tcp
+      - 7777:7777/udp
+      - 7778:7778/udp
     environment:
       - TERM=xterm

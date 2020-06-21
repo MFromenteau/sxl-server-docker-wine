@@ -1,0 +1,11 @@
+version: '2'
+services:
+  server:
+    build: ./image
+    volumes:
+      - /e/Servers/skaterxl:/root/skaterxl
+    ports:
+      - "7777:7777"
+      - "7778:7778"
+    environment:
+      - TERM=xterm
